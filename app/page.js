@@ -53,9 +53,9 @@ export default function Home() {
                 <h3>Sia Partners</h3>
                 {/* <p>New York City, NY</p> */}
                 <p>June 2023 - Present</p>
-                <ul>
+                {/* <ul>
                   <li>Key achievement placeholder</li>
-                </ul>
+                </ul> */}
               </div>
             </section>
 
