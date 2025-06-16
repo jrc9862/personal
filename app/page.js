@@ -42,7 +42,7 @@ export default function Home() {
               <p>
                 I work as a consultant at Sia Partners. I like coding, data, pointless side projects, 
                 board games, UNC basketball, movies, reading, and other stuff. This website is a perpetual
-                work in progress that is meant to be a place to be a hub for all the stuff I'm up to and 
+                work in progress that is meant to be a hub for all the stuff I'm up to and 
                 interested in.
               </p>
             </section>
