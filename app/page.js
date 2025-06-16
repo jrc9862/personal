@@ -1,5 +1,6 @@
 import Layout from '../components/Layout';
 import AnimatedPage from '../components/AnimatedPage';
+import Image from 'next/image';
 
 export const transitionType = 'fade';
 
@@ -9,7 +10,16 @@ export default function Home() {
       <AnimatedPage transitionType={transitionType}>
         <div className="about-container">
           <div className="profile-section">
-            <div className="profile-image" />
+            <div className="profile-image">
+              <Image 
+                src="/headshot.jpg" 
+                alt="James Collett" 
+                width={200} 
+                height={200}
+                className="profile-image-mask"
+                priority
+              />
+            </div>
             <div className="profile-name">
               <h1>James Collett</h1>
             </div>
