@@ -41,9 +41,8 @@ export default function Home() {
               <h2>Bio</h2>
               <p>
                 I work as a consultant at Sia Partners. I like coding, data, pointless side projects, 
-                board games, UNC basketball, movies, reading, and other stuff. This website is a perpetual
-                work in progress that is meant to be a hub for all the stuff I'm up to and 
-                interested in.
+                board games, UNC basketball, movies, reading, and other stuff. This website is meant to 
+                be a hub for all the things I'm up to and interested in. Perpetual work in progress. 
               </p>
             </section>
 
