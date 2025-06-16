@@ -230,6 +230,7 @@ section ul li::before {
   color: var(--text-secondary);
 }
 
+/* Writing card */
 .writing-card {
   padding: 1rem;
   margin: 0;
@@ -266,20 +267,6 @@ section ul li::before {
   background-color: rgba(255, 255, 255, 0.05);
 }
 
-section > div {
-  margin-bottom: 2rem;
-}
-
-section > div:last-child {
-  margin-bottom: 0;
-}
-
-.profile-name {
-  font-size: 1rem;
-  font-weight: bold;
-  margin-bottom: 0.5rem;
-}
-
 /* Mobile breakpoint */
 @media (max-width: 768px) {
   .about-container {
@@ -312,6 +299,52 @@ section > div:last-child {
   .social-links {
     margin-bottom: 1rem;
   }
+
+  .project-card:hover h3 {
+    transform: none;
+  }
+
+  /* Mobile writing card behavior */
+  .writing-card:hover p {
+    max-height: 0;
+    margin: 0;
+    opacity: 0;
+  }
+
+  .writing-card.expanded p {
+    max-height: 200px;
+    margin-top: 1rem;
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  .writing-card {
+    background-color: rgba(255, 255, 255, 0.05);
+  }
+
+  .writing-card.expanded {
+    background-color: rgba(255, 255, 255, 0.1);
+  }
+
+  .writing-card a {
+    display: none;
+    margin-top: 1rem;
+    opacity: 0;
+    transform: translateY(-10px);
+    transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  .writing-card.expanded a {
+    display: inline-block;
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.profile-name {
+  font-size: 1rem;
+  font-weight: bold;
+  margin-bottom: 0.5rem;
 }
 
 

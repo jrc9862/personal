@@ -3,7 +3,7 @@ const projects = [
     id: 1,
     title: "Personal Portfolio",
     description: "A minimalist portfolio website built with Next.js and React, featuring smooth page transitions and keyboard navigation.",
-    link: "https://github.com/username/portfolio"
+    link: "https://github.com/jrc9862/personal"
   },
   {
     id: 2,

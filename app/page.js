@@ -81,8 +81,7 @@ export default function Home() {
                 <li>Python (Pandas, SKL, Seaborn, Scipy)</li>
                 <li>R</li>
                 <li>SQL</li>
-                <li>PyTorch</li>
-                <li>Project Management</li>
+                <li>HTML, CSS, JS</li>
               </ul>
             </section>
           </div>
