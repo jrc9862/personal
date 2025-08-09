@@ -15,7 +15,7 @@ export default function Layout({ children }) {
           rel="noopener noreferrer"
           className="book-time"
         >
-          Book Time
+          Chat with me
         </a>
       </nav>
 

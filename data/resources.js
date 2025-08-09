@@ -3,7 +3,8 @@ const resources = [
     id: 1,
     title: "",
     description: "",
-    link: ""
+    link: "",
+    tags: ["tag1", "tag2", "tag3"],
   }
 ];
 

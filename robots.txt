@@ -1,0 +1,29 @@
+# Global rules for all crawlers
+User-agent: *
+Allow: /
+Disallow: /api/       # Block API endpoints (if you have any)
+Disallow: /.next/     # Block Next.js build files
+Disallow: /admin      # Block admin areas (if any)
+
+# Specific rules for Google
+User-agent: Googlebot
+Allow: /
+Crawl-delay: 1
+
+# Specific rules for Bing
+User-agent: Bingbot
+Allow: /
+Crawl-delay: 2
+
+# Block aggressive crawlers (optional)
+User-agent: AhrefsBot
+Disallow: /
+
+User-agent: SemrushBot
+Disallow: /
+
+# Host (update with your actual domain)
+Host: https://your-domain.com
+
+# Sitemap location
+Sitemap: https://your-domain.com/sitemap.xml 

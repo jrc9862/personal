@@ -40,9 +40,7 @@ export default function Home() {
             <section>
               <h2>Bio</h2>
               <p>
-                I work as a consultant at Sia Partners. I like coding, data, pointless side projects, 
-                board games, UNC basketball, movies, reading, and other stuff. This website is meant to 
-                be a hub for all the things I'm up to and interested in. Perpetual work in progress. 
+                Hi! I'm James. I'm a Management & Technology Consultant at Sia and general emerging technology enthusiast. I like coding, data, pointless side projects, board games, UNC basketball, movies, reading, and Muay Thai (among other things). This website is meant to be a hub for everything I'm up to and interested in. Perpetual work in progress. 
               </p>
             </section>
 
@@ -53,7 +51,7 @@ export default function Home() {
                 {/* <p>New York City, NY</p> */}
                 <p>June 2023 - Present</p>
                 {/* <ul>
-                  <li>Key achievement placeholder</li>
+                  <li>placeholder</li>
                 </ul> */}
               </div>
             </section>
@@ -76,7 +74,6 @@ export default function Home() {
             <section>
               <h2>Technical Skills</h2>
               <ul>
-                <li>Excel, PowerPoint, Word</li>
                 <li>Python (Pandas, SKL, Seaborn, Scipy)</li>
                 <li>R</li>
                 <li>SQL</li>
