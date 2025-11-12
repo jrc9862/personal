@@ -9,6 +9,13 @@ export default function Layout({ children }) {
         <Link href="/">About</Link>
         <Link href="/projects">Projects</Link>
         <Link href="/writings">Writings</Link>
+        <a
+          href="https://allegedly-brilliant.beehiiv.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Blog
+        </a>
         <a 
           href="https://calendly.com/jrc9862/15min" 
           target="_blank" 
@@ -22,6 +29,9 @@ export default function Layout({ children }) {
       <main>{children}</main>
 
       <footer className="footer">
+        <a href="https://allegedly-brilliant.beehiiv.com/" target="_blank" rel="noopener noreferrer">
+          Blog
+        </a>
         <a href="https://github.com/jrc9862" target="_blank" rel="noopener noreferrer">
           GitHub
         </a>
