@@ -1,40 +1,57 @@
 'use client';
 
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 
 export default function ProjectCard({ title, description, link }) {
   const [isExpanded, setIsExpanded] = useState(false);
+  const [isMobile, setIsMobile] = useState(false);
 
-  const toggleExpand = () => {
-    setIsExpanded(!isExpanded);
+  useEffect(() => {
+    const checkMobile = () => setIsMobile(window.innerWidth <= 768);
+    checkMobile();
+    window.addEventListener('resize', checkMobile);
+    return () => window.removeEventListener('resize', checkMobile);
+  }, []);
+
+  const handleClick = () => {
+    if (isMobile) {
+      setIsExpanded(!isExpanded);
+    } else if (link) {
+      window.open(link, '_blank', 'noopener,noreferrer');
+    }
+  };
+
+  const handleLinkClick = (e) => {
+    e.stopPropagation();
+    if (link) window.open(link, '_blank', 'noopener,noreferrer');
   };
 
   return (
     <div
       className={`project-card ${isExpanded ? 'expanded' : ''}`}
-      onClick={toggleExpand}
+      onClick={handleClick}
       tabIndex={0}
-      role="button"
-      aria-label={`View details for ${title}`}
+      role={isMobile ? 'button' : 'link'}
+      aria-label={isMobile ? `View details for ${title}` : `View project: ${title}`}
       onKeyDown={(e) => {
         if (e.key === 'Enter' || e.key === ' ') {
           e.preventDefault();
-          toggleExpand();
+          handleClick();
         }
       }}
     >
       <h3>{title}</h3>
       <p>{description}</p>
-      {link && (
+      {isMobile && link && (
         <a
           href={link}
           target="_blank"
           rel="noopener noreferrer"
-          onClick={(e) => e.stopPropagation()}
+          onClick={handleLinkClick}
         >
           View Project →
         </a>
       )}
     </div>
   );
-} 
+}

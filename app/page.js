@@ -45,10 +45,9 @@ export default function Home() {
                 This website is meant to be a hub for everything I'm up to and interested in. Perpetual work in progress.
               </p>
               <p>
-                I occasionally write on <a href="https://allegedly-brilliant.beehiiv.com/" 
-                                           target="_blank" 
-                                           rel="noopener noreferrer" 
-                                           style={{textDecoration: 'underline'}}>Allegedly Brilliant</a>.
+                I occasionally write on <a href="https://allegedly-brilliant.beehiiv.com/"
+                                           target="_blank"
+                                           rel="noopener noreferrer">Allegedly Brilliant</a>.
               </p>
               <br></br>
               <p>
