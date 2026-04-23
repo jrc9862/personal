@@ -1,6 +1,6 @@
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: 'https://your-domain.com',
+  siteUrl: 'https://collett.land',
   generateRobotsTxt: true,
   generateIndexSitemap: false,
   changefreq: 'monthly',

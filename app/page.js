@@ -30,7 +30,7 @@ export default function Home() {
               <a href="https://www.linkedin.com/in/jrcollett/" target="_blank" rel="noopener noreferrer">
                 LinkedIn
               </a>
-              <a href="mailto:james.collett@stern.nyu.edu">Email</a>
+              <a href="mailto:james@collett.land">Email</a>
             </div>
           </div>
 
