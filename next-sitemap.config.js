@@ -6,7 +6,7 @@ module.exports = {
   changefreq: 'monthly',
   priority: 0.7,
   sitemapSize: 7000,
-  exclude: ['/server-sitemap.xml', '/twilio-opt-in'],
+  exclude: ['/server-sitemap.xml', '/twilio-opt-in', '/writings'],
   robotsTxtOptions: {
     additionalSitemaps: [],
     policies: [

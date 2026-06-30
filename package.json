@@ -19,6 +19,6 @@
   "devDependencies": {
     "eslint": "^8.56.0",
     "eslint-config-next": "14.1.0",
-    "wrangler": "^3.0.0"
+    "wrangler": "^3.114.17"
   }
 }

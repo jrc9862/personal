@@ -24,7 +24,7 @@ export default function Layout({ children }) {
       <motion.nav className="nav" variants={sectionVariant}>
         <Link href="/">About</Link>
         <Link href="/projects">Projects</Link>
-        <Link href="/writings">Writings</Link>
+        {/* <Link href="/writings">Writings</Link> */}
         <a
           href="https://allegedly-brilliant.beehiiv.com/"
           target="_blank"
