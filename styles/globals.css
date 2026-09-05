@@ -101,7 +101,22 @@ a {
 .footer {
   padding: 2rem 0;
   margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0.5rem 0;
   border-top: 1px solid #333;
+}
+
+/* Legal links — pushed right, de-emphasized */
+.footer-legal {
+  margin-left: auto;
+  font-size: 0.8rem;
+  color: var(--text-secondary);
+}
+
+.footer-legal a:last-child {
+  margin-right: 0;
 }
 
 .footer a {
@@ -409,5 +424,64 @@ section ul li::before {
 
   .social-links {
     margin-bottom: 1rem;
+  }
+}
+
+/* =========================================
+   Legal pages (privacy, terms)
+   ========================================= */
+.legal {
+  width: 90%;
+  max-width: 720px;
+  margin: 2rem auto;
+}
+
+.legal h1 {
+  margin-bottom: 0.5rem;
+}
+
+.legal-date {
+  margin-bottom: 2rem;
+  color: var(--text-secondary);
+  font-size: 0.9rem;
+}
+
+.legal section h2 {
+  font-size: 1.1rem;
+}
+
+.legal section p {
+  margin: 0 0 1rem 0;
+  line-height: 1.65;
+}
+
+.legal section ul li {
+  line-height: 1.65;
+  color: var(--text-secondary);
+}
+
+.legal a {
+  position: relative;
+  color: var(--text-primary);
+}
+
+.legal a::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 1px;
+  bottom: -2px;
+  left: 0;
+  background-color: currentColor;
+  transition: width var(--transition);
+}
+
+.legal a:hover::after {
+  width: 100%;
+}
+
+@media (max-width: 768px) {
+  .legal {
+    width: 95%;
   }
 }

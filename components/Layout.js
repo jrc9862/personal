@@ -55,6 +55,11 @@ export default function Layout({ children }) {
           LinkedIn
         </a>
         <a href="mailto:james@collett.land">Email</a>
+
+        <span className="footer-legal">
+          <Link href="/privacy">Privacy</Link>
+          <Link href="/terms">Terms</Link>
+        </span>
       </motion.footer>
     </motion.div>
   );
