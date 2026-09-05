@@ -43,3 +43,7 @@ deploy.sh
 deploy.ps1
 
 CLAUDE.md
+# editor swap files (can contain .env contents)
+*.swp
+*.swo
+*~
