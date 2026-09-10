@@ -1,6 +1,7 @@
 import Layout from '../components/Layout';
 import AnimatedPage from '../components/AnimatedPage';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export const transitionType = 'fade';
 
@@ -48,6 +49,10 @@ export default function Home() {
                 I occasionally write on <a href="https://allegedly-brilliant.beehiiv.com/"
                                            target="_blank"
                                            rel="noopener noreferrer">Allegedly Brilliant</a>.
+              </p>
+              <p>
+                You can also sign up for any of my <Link href="/digests">automated
+                digests</Link>.
               </p>
               <br></br>
               <p>

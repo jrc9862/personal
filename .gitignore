@@ -47,3 +47,6 @@ CLAUDE.md
 *.swp
 *.swo
 *~
+
+# wrangler local secrets (Pages Functions)
+.dev.vars
