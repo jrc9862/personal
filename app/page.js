@@ -41,8 +41,8 @@ export default function Home() {
             <section>
               <h2>Bio</h2>
               <p>
-                Hi! I'm James. I'm a Management & Technology Consultant at Sia and general emerging technology enthusiast. 
-                I like coding, data, pointless side projects, board games, UNC basketball, movies, reading, and Muay Thai (among other things). 
+                Hi! I'm James. I'm an AI Delivery Lead at Sia and general emerging technology enthusiast. 
+                I like coding, data, electronics, robotics, pointless side projects, board games, UNC basketball, movies, reading, and Muay Thai (among other things). 
                 This website is meant to be a hub for everything I'm up to and interested in. Perpetual work in progress.
               </p>
               <p>
@@ -87,7 +87,7 @@ export default function Home() {
               <a href="https://poetsandquantsforundergrads.com/students/2024-best-brightest-business-major-james-collett-new-york-university-stern/" target="_blank" rel="noopener noreferrer">Poets & Quants: Best & Brightest Undergraduate Business Students</a>
             </section>
 
-            <section>
+            {/* <section>
               <h2>Technical Skills</h2>
               <ul>
                 <li>Python (Pandas, SKL, Seaborn, Scipy)</li>
@@ -95,7 +95,7 @@ export default function Home() {
                 <li>SQL</li>
                 <li>HTML, CSS, JS</li>
               </ul>
-            </section>
+            </section> */}
           </div>
         </div>
       </AnimatedPage>
