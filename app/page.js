@@ -2,6 +2,7 @@ import Layout from '../components/Layout';
 import AnimatedPage from '../components/AnimatedPage';
 import Image from 'next/image';
 import Link from 'next/link';
+import QuoteBlock from '../components/QuoteBlock';
 
 export const transitionType = 'fade';
 
@@ -33,6 +34,7 @@ export default function Home() {
               </a>
               <a href="mailto:james@collett.land">Email</a>
             </div>
+            <QuoteBlock />
           </div>
 
           <div className="content-section">
