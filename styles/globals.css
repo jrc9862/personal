@@ -367,8 +367,11 @@ a {
    Projects / Writings grid
    ========================================= */
 .projects-grid {
-  display: flex;
-  flex-direction: column;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  /* Cards grow when their description expands on hover. Without this the whole
+     row grows with the tallest card. */
+  align-items: start;
   width: 90%;
   margin: 2rem auto;
   gap: 1rem;
@@ -419,6 +422,10 @@ section ul li::before {
    Mobile
    ========================================= */
 @media (max-width: 768px) {
+  .projects-grid {
+    grid-template-columns: 1fr;
+  }
+
   .about-container {
     flex-direction: column;
     align-items: center;

@@ -2,7 +2,7 @@ const projects = [
   {
     id: 1,
     title: "Personal Portfolio",
-    description: "A minimalist portfolio website built with Next.js and React, featuring smooth page transitions and keyboard navigation.",
+    description: "This website: a minimalist portfolio built with Next.js and React.",
     link: "https://github.com/jrc9862/personal"
   },
   {
